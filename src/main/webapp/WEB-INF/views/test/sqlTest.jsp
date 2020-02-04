@@ -8,10 +8,19 @@
 <title>Sql Test</title>
 </head>
 <body>
-
+<table>
 <c:forEach var="list" items="${testList }">
-	${list.text }<br>
+	<tr>
+		<td>${list.text }<br></td>
+		<td><input type="button" value="삭제" id="delBtn"></td>
+	</tr>
 </c:forEach>
-
+</table>
+<form action="/test/input">
+<input type="text" name="text" /><input type="submit" value="입력" />
+</form>
 </body>
+<script type="text/javascript">
+	
+</script>
 </html>

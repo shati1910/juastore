@@ -18,4 +18,9 @@ public class TestService {
 	public List<Test> getList() throws Exception {
 		return testMapper.getList();
 	}
+	
+
+	public void insertText(String text) throws Exception {
+		testMapper.insertText(text);
+	}
 }
